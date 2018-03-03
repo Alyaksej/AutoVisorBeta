@@ -70,8 +70,7 @@ bool DataBase::creatTable()
     if(!query.exec("CREATE TABLE" TABLE "("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                    TABLE_ID_DEVICE   " VARCHAR(255)  NULL,"
-                   TABLE_NUMBER_MESS " VARCHAR(255)  NULL,"
-
+                   TABLE_NUMBER_MESS " INT           NULL,"
                    " )"))
     {
         qDebug()<<"Error of create DataBase"<<TABLE;
