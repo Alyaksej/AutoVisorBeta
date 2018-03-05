@@ -5,6 +5,7 @@
 #include <QSqlTableModel>
 
 #include <database.h>
+#include <port.h>
 
 namespace Ui {
 class MainWindow;
@@ -26,10 +27,13 @@ private slots:
 
     void fillPortInfo();
 
+    void checkCustomBaudRatePolicy(int idx);
+
 private:
     Ui::MainWindow *ui;
     DataBase       *db;
     QSqlTableModel *model;
+    Port           *PortNew;
 
 };
 
